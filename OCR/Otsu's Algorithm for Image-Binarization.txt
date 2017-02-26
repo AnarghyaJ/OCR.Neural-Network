@@ -1,0 +1,13 @@
+1.separate the pixels into two clusters according to the threshold
+2.find the mean of each cluster
+3.square the difference between the means
+4.multiply by the number of pixels in one cluster times the number in the other
+
+If we incorporate the math from the previous section we get:
+
+compute histogram and probabilities of each intensity level
+set up initial q_i(0) and \mu_i(0)
+step through all possible threshold maximum intensity
+update q_i and \mu_i
+compute \sigma_b^2(t)
+desired threshold corresponds to the maximum
